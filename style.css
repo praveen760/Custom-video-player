@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+h1{
+   font-size: 140px;
+   color: deeppink;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Questrial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 50vh;
+  margin: 0;
+  background-color: #666;
+  margin-top: 200px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.screen {
+  cursor: pointer;
+  width: 40%;
+  height:50vh;
+  background-color: #000 !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.controls {
+  background: rgb(202, 178, 99);
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40%;
+}
+
+.controls .btn {
+  border: 0;
+  font-size:40px;
+  background: transparent;
+  cursor: pointer;
+}
+.controls .fa-play {
+  color: #28a745;
+}
+
+.controls .fa-stop {
+  color:red;
+}
+
+.controls .fa-pause {
+  color: yellow;
+}
+
+.controls .timestamp {
+  color:blue;
+  font-size: xx-large;
+  margin-left: 10px;
+  height: 20px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 60%;
+  }
+}
